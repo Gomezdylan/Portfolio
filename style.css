@@ -12,7 +12,7 @@
     top:  0;
     left:  0;
     width: 100%;
-    height: 110px;
+    height: 120px;
     padding: 35px 12%;
     background: rgba(0,0,0,0.8);
     display: flex;
@@ -20,7 +20,13 @@
     align-items: center;
 }
 body{
-    padding-top: 110px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 120px;
+}
+section h2{
+    font-size: 42px;
 }
 .logo{
     font-size: 30px;
@@ -44,12 +50,34 @@ body{
 }
 .home{
     width: 100%;
-    min-height: 100vh;
     align-items: center;
     display: flex;
+    flex: 1;
     padding: 50px 50px;
-    gap: 15em;
+    justify-content: space-between;
+    padding: 0px 100px; /* Didnt have anything here before */
     background: blanchedalmond;
+}
+.footer{
+    width: 100%;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    padding: 12px;
+    justify-content: space-evenly;
+    bottom: 0;
+    left: 0;
+
+}
+.footer a{
+    font-size: 18px;
+    color: orange;
+    justify-content: space-evenly;
+}
+.footer a:hover,
+.footer a.active{
+    color: orangered;
+    border-bottom: 3px solid orange;
 }
 .content{
     max-width: 800px;
@@ -61,8 +89,16 @@ body{
     font-size: 60px;
     color: orangered
 }
+.content h3 p{
+    font-size: 15;
+    color: orangered;
+    display: inline;
+    line-height: 1.6;
+}
 .content p{
     font-size: 18px;
+    background: blanchedalmond;
+    width: 100%;
 }
 .btn-box{
     width: 345px;
@@ -79,4 +115,54 @@ body{
     border-radius: 20%;
     width: 800px;
 
+}
+.contact-info{
+    width: 50%;
+    font-size: 42px;
+    background: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px;
+
+}
+.contact-info p{
+    font-size: 18px;
+    margin: 12px 0;
+    line-height: 2.0;
+}
+.contact-info a{
+    color: orangered;
+    text-decoration: underline;
+}
+.map{
+    width: 50%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    flex: 1;
+
+}
+.card{
+    min-height: 800px;
+}
+.writing{
+    width: 100%;
+    flex: 1;
+    background-color: blanchedalmond;
+}
+.writing h3{
+    text-align: left;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.writing p{
+    text-align: left;
+    font-size: 28px;
+    width: 70%;
+    padding-top: 50px;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    padding-left: 20px;
+    color: orangered;
 }
